@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0b0f17;
+  --color-card: #101620;
+  --color-card2: #14202c;
+  --color-line: #2f4a5e;
+  --color-accent: #7dd3fc;
+  --color-ink: #eef5fa;
+  --color-mute: #cfdde8;
+
+  --animate-blink: blink 1s step-end infinite;
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
